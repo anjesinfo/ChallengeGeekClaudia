@@ -1,0 +1,144 @@
+.login {
+    display: block;
+    align-items: center;
+    margin: 91px auto;
+}
+
+@media screen and (max-width: 360px) {
+    .login {        
+        width: 100%;        
+        margin-top: 97px;
+        margin-bottom: 76px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .login {        
+        margin-top: 45px;
+        margin-bottom: 61px;
+    }
+}
+
+.login__titulo {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 128px;
+    margin-bottom: 24.89px;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .login__titulo {
+        font-size: 16px;
+    }
+}
+
+.login__usuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.email__usuario {
+    width: 423px;
+    height: 63.13px;
+    border-radius: 4px;
+    left: calc(50% - 423px/2 - 0.5px);
+    top: 259.89px;
+    margin-bottom: 24.63px;
+    border-color: transparent;
+}
+
+.email__usuario:hover {
+    background-color: #D4E4FA;
+}
+
+.email__usuario:focus{
+    outline: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .email__usuario {
+        width: 275px;
+        height: 41px;
+    }
+}
+
+.senha__usuario {
+    width: 423px;
+    height: 63px;
+    border-radius: 4px;
+    left: calc(50% - 423px/2);
+    top: 24.63px;
+    margin-bottom: 24.63px;
+    border-color: transparent;
+}
+
+.senha__usuario:hover {
+    background-color: #D4E4FA
+}
+
+.senha__usuario:focus {
+    outline: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .senha__usuario {
+        width: 275px;
+        height: 41px;
+    }
+}
+
+.botao__login {
+    background: #ac4ac5;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 12px 16px;
+    width: 423px;
+    height: 62px;
+    left: 508px;
+    top: 435px;
+    margin-bottom: 91px;
+    cursor: pointer;
+    transition: transform 200ms linear;
+}
+
+.botao__login:hover {
+    transform: scale(1.02);
+    background-color: #e4aee4;    
+}
+
+@media screen and (max-width: 768px) {
+    .botao__login {
+        width: 109px;
+        height: 40px;
+    }
+}
+
+#modal {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+#modal.login {
+    animation-name: slide;
+    animation-duration: .6s; 
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes slide {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

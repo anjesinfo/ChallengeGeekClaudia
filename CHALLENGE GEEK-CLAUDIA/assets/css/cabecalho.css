@@ -1,0 +1,108 @@
+.cabecalho {    
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 0;
+    padding: 0 152px;    
+}
+
+@media screen and (max-width: 360px) {
+    .cabecalho {
+        display: inline-block;
+        padding-left: 16px;
+        padding-right: 16px;      
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalho {
+       padding-left: 32px;
+       padding-right: 32px;
+    }
+}
+
+.cabecalho__logo {
+    width: 176px;
+    height: 50px;
+}
+
+@media screen and (max-width: 360px) {
+    .cabecalho__logo {
+        width: 100px;
+        height: 28px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalho__logo {
+        width: 100px;       
+    }
+}
+
+.cabecalho__botao-login {
+    width: 182px;
+    height: 51px;    
+    margin-right: 0;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    border: 1px solid #ac4ac5;    
+    border-radius: 5%;
+    color: #ac4ac5;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.cabecalho__botao-login:hover {
+    background-color: #D4E4FA;
+}
+
+@media screen and (max-width: 360px) {
+    .cabecalho__botao-login{
+        margin: 16px 75.5px 16px 151.5px;        
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalho__botao-login {
+        width: 166px;
+        height: 40px;
+        margin-right: 134px;
+        margin-left: 32px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+.input {
+    background: #F5F5F5;
+    width: 393px;
+    height: 40px;    
+    font-size: 14px;
+    font-weight: 400;    
+    border-radius: 20px;    
+    margin-left: 20px;
+    margin-right: 480px;    
+    border-color: transparent;
+    box-sizing: border-box;
+    padding: 8px 16px;        
+    left: calc(50% - 393px/2 + 104px);
+    top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .input {
+        width: 272px;
+        margin: 12px 134px 12px 10px;
+    }
+}
+
+.input--icone {
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.input--lupa {
+    background-image: url(../img/icones/lupa.svg);
+}

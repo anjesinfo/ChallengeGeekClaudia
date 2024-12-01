@@ -1,0 +1,155 @@
+.rodape {
+    background: #EAF2FD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+    padding: 64px 120px;
+}
+
+@media screen and (max-width: 360px) {
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;        
+    }
+}
+
+.informacoes-rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 360) {
+    .informacoes-rodape {
+        justify-content: space-between;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        align-items: center;
+    }
+}
+
+@media screen  and (max-width:360px) {
+    .contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width:  340px;
+        padding: 16px;        
+    }
+}
+
+.mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 700;
+    align-self: flex-start;
+    padding-bottom: 8px;
+    margin-left: 16px;
+}
+
+.nome__usuario {
+    background: #FFFFFF;        
+    font-size: 12px;
+    font-weight: 400;
+    border-color: transparent;
+    width: 560px;
+    height: 56px;
+    border-radius: 4px;
+    gap: 4px;
+    margin-bottom: 16px;
+    left: calc(50% - 560px/2);
+}
+
+@media screen and (max-width: 360px) {
+    .nome__usuario {
+        display: inline-block;
+        width: 260px;
+        height: 56px;
+        margin: 16px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .nome__usuario {
+        display: inline-block;
+        width: 434px;
+        height: 56px;
+    }
+}
+
+.mensagem__usuario {
+    background: #FFFFFF;    
+    width: 560px;
+    height: 82px;
+    border-color: transparent;
+    border-radius: 4px;
+    gap: 4px;    
+    margin-bottom: 8px;
+    left: calc(50% - 560px/2);
+}
+
+@media screen and (max-width: 360px) {
+    .mensagem__usuario {
+        width: 328px;
+        height: 82px;
+        margin-left: 16px;
+        margin-right: 16px;        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mensagem__usuario {
+        width: 434px;
+        height: 82px;
+    }
+}
+
+.botao__mensagem {
+    background: #ac4ac5;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.botao__mensagem:hover {
+    background: #ac4ac5;
+}
+
+@media screen and (max-width: 768px) {
+    .botao__mensagem {
+        margin: 16px 187px 8px 16px;
+    }
+}
+
+.creator {
+    background: #FFFFFF;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+    
+    font-size: 16px;
+    font-weight: 500;    
+}
+
+h6 {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 32px;
+
+    font-size: 16px;
+    font-weight: 500;    
+}

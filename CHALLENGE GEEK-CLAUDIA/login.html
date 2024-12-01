@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek | Home Login</title>    
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <link rel="stylesheet" href="assets/css/cabecalho.css"> 
+    <link rel="stylesheet" href="assets/css/produtos.css">
+    <link rel="stylesheet" href="assets/css/rodape.css">  
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/login.js">
+    <link rel="stylesheet" href="assets/css/produtos-similares.css">
+    <link rel="stylesheet" href="assets/css/todos_produtos.css">
+</head>
+<body>
+    <header class="container cabecalho">
+        <a href="index.html"><img src="assets/img/Logo.svg" alt="Logo AluraGeek" class="cabecalho__logo"></a> 
+        <input type="text" class="input input--icone input--lupa" placeholder="O que deseja encontrar?" aria-label="O que deseja encontrar?">
+        <button class="cabecalho__botao-login">Login</button>
+    </header>  
+    <section class="content">
+        <div id="modal" class="login">
+            <h3 class="login__titulo">Iniciar sessão</h3>
+            <form class="login__usuario" method="post" action="#">                    
+                <input class="email__usuario" type="email" name="email" placeholder="Escreva seu e-mail" required>
+                <input class="senha__usuario" type="password" name="senha" placeholder="Escreva sua senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos" required>
+                <input class="botao__login" type="submit" value="Entrar">
+            </form>
+        </div>
+    </section>       
+    <footer class="container rodape">
+        <img src="./assets/img/Logo_footer.svg" alt="Logo AluraGeek">
+        <ul class="informacoes-rodape">
+            <li>Quem somos nós</li>
+            <li>Política de privacidade</li>
+            <li>Programa de fidelidade</li>
+            <li>Nossas lojas</li>
+            <li>Quero ser franqueado</li>
+            <li>Anuncie aqui</li>
+        </ul>
+        <section class="content">
+            <div class="contato">
+                <h3>Fale conosco</h3>
+                <form class="mensagem" method="post" action="#">                    
+                    <input class="nome__usuario" type="text" name="name" placeholder="Nome">
+                    <textarea class="mensagem__usuario" name="mesage" placeholder="Escreva sua mensagem" id="" cols="30" rows="10"></textarea>
+                    <input class="botao__mensagem" type="submit" value="Enviar mensagem">
+                </form>
+            </div>
+        </section>
+    </footer>
+    <section class="creator">Desenvolvido por Claudia Anunciação</section>
+    <h5>2024</h5>
+</body>
+</html>

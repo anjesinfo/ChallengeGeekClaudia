@@ -1,0 +1,40 @@
+.produtos__destaque {
+    
+    position: absolute;     
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    display: flex;
+}
+
+.produto__destaque__imagem {        
+    width: 560px;
+    height: 403px;  
+}
+
+.produto__texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+    width: 560px;
+    height: 210px;
+    padding-left: 16px;  
+    margin-right: 152px;   
+    margin-top: 96.5px;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.produtos__similares {
+    margin-top: 531px;
+}

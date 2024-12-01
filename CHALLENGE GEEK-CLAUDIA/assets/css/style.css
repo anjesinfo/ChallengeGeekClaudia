@@ -1,0 +1,110 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+}
+
+.banner {
+    position: relative;    
+}
+
+.banner__imagem {       
+    background: url(../../assets/img/banner-image.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;     
+    height: 352px;       
+    padding: 32px 120px;      
+}
+
+@media screen and (max-width: 360px) {
+    .banner__imagem {
+        height: 192px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner__imagem {
+        height: 352px;
+    }
+}
+
+.banner__titulo {    
+    font-size: 52px;
+    font-weight: 700;
+    color: #FFFFFF;     
+    margin-top: 160px;      
+}
+
+@media screen and (max-width: 360px) {
+    .banner__titulo {
+        font-size: 22px;
+        padding: 0px;
+        margin-left: 16px;
+        margin-top: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner__titulo {
+        font-size: 52px;
+        padding: 0px; 
+        margin-left: 32px;
+        margin-top: 15%;
+    }
+}
+
+.banner__descricao {
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFFFFF;    
+    margin-top: 16px;
+}
+
+@media screen and (max-width: 360px) {
+    .banner__descricao {
+        font-size: 14px;
+        padding: 0px;
+        margin-left: 16px;   
+        margin-top: 8px;     
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner__descricao {
+        font-size: 22px;
+        margin-left: 32px;
+    }
+}
+
+.banner__botao {    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.78px;    
+    width: 130px;
+    height: 51px;
+    left: 0;
+    top: 119px;
+    background: #ac4ac5;
+    color: #FFFFFF;    
+    margin-top: 16px;   
+}
+
+.banner__botao:hover {
+    background: #ba7dec;
+}
+
+@media screen and (max-width: 360px) {
+    .banner__botao {
+        margin-left: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner__botao {
+        margin-left: 32px;
+    }
+}
